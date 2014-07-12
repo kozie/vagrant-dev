@@ -11,10 +11,8 @@ Vagrant.configure("2") do |config|
 		# devenv.vm.share_folder "app", "/home/vagrant/app", "app"
 		devenv.vm.synced_folder "app/", "/home/vagrant/app"
 
-		# Uncomment the following line to allow for symlinks
-		# in the app folder. This will not work on Windows, and will
-		# not work with Vagrant providers other than VirtualBox
-		# devenv.vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/app", "1"]
+		# Update chef using omnibus (https://github.com/schisamo/vagrant-omnibus)
+		config.omnibus.chef_version = :latest
 
 		devenv.vm.provision "chef_solo" do |chef|
 			chef.cookbooks_path = "cookbooks"
