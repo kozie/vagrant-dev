@@ -34,3 +34,6 @@
 [submodule "cookbooks/iptables"]
 	path = cookbooks/iptables
 	url = https://github.com/opscode-cookbooks/iptables.git
+[submodule "cookbooks/logrotate"]
+	path = cookbooks/logrotate
+	url = https://github.com/stevendanna/logrotate.git
