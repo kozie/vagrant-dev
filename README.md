@@ -15,17 +15,17 @@ Installation
 ------------
 
 1. Clone repository
-```
+```Shell
 $ git clone https://github.com/kozie/vagrant-dev.git
 ```
 
 2. Initialize the cookbooks
-```
+```Shell
 $ git submodule init
 $ git submodule update
 ```
 
 3. Run Vagrant and let it do it's magic
-```
+```Shell
 $ vagrant up
 ```
