@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
 		devenv.vm.provision "chef_solo" do |chef|
 			chef.cookbooks_path = "cookbooks"
 			
-			chef.add_recipe "apache"
+			chef.add_recipe "apache2"
 			chef.add_recipe "php"
 			chef.add_recipe "composer"
 			chef.add_recipe "laravel"
