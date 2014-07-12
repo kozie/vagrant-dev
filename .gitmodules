@@ -1,0 +1,30 @@
+[submodule "cookbooks/build-essential"]
+	path = cookbooks/build-essential
+	url = https://github.com/opscode-cookbooks/build-essential.git
+[submodule "cookbooks/laravel"]
+	path = cookbooks/laravel
+	url = https://github.com/BeattieM/laravel.git
+[submodule "cookbooks/nodejs"]
+	path = cookbooks/nodejs
+	url = https://github.com/mdxp/nodejs-cookbook.git
+[submodule "cookbooks/php"]
+	path = cookbooks/php
+	url = https://github.com/opscode-cookbooks/php.git
+[submodule "cookbooks/python"]
+	path = cookbooks/python
+	url = https://github.com/poise/python.git
+[submodule "cookbooks/vim"]
+	path = cookbooks/vim
+	url = https://github.com/opscode-cookbooks/vim.git
+[submodule "cookbooks/apache2"]
+	path = cookbooks/apache2
+	url = https://github.com/onehealth-cookbooks/apache2.git
+[submodule "cookbooks/apt"]
+	path = cookbooks/apt
+	url = https://github.com/opscode-cookbooks/apt.git
+[submodule "cookbooks/git"]
+	path = cookbooks/git
+	url = https://github.com/jssjr/git.git
+[submodule "cookbooks/composer"]
+	path = cookbooks/composer
+	url = https://github.com/escapestudios-cookbooks/composer.git
