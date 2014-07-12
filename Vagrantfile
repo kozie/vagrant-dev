@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
 			
 			chef.add_recipe "apache2"
 			chef.add_recipe "php"
-			chef.add_recipe "mysql"
+			# chef.add_recipe "mysql"
 			chef.add_recipe "composer"
 			chef.add_recipe "laravel"
 			chef.add_recipe "python"
