@@ -16,7 +16,9 @@ Vagrant.configure("2") do |config|
 		# not work with Vagrant providers other than VirtualBox
 		# devenv.vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/app", "1"]
 
-		devenv.vm.provision :chef_solo do |chef|
+		devenv.vm.provision "chef_solo" do |chef|
+			chef.cookbooks_path = "cookbooks"
+			
 			chef.add_recipe "apache"
 			chef.add_recipe "php"
 			chef.add_recipe "composer"
