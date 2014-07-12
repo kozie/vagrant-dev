@@ -19,13 +19,13 @@ Vagrant.configure("2") do |config|
 		devenv.vm.provision :chef_solo do |chef|
 			chef.add_recipe "apache"
 			chef.add_recipe "php"
-			chef.add_recupe "composer"
+			chef.add_recipe "composer"
 			chef.add_recipe "laravel"
 			chef.add_recipe "python"
 			chef.add_recipe "nodejs"
-			chef.add_recipe "mongodb-debs"
+			# chef.add_recipe "mongodb-debs"
 			chef.add_recipe "vim"
-			chef.add_recupe "git"
+			chef.add_recipe "git"
 
 			chef.json = {
 				"nodejs" => {
@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
 		end
 
 		devenv.vm.provision "shell", inline: "sudo apt-get install -y build-essential --no-install-recommends"
-		devenv.vm.provision "shell", inline: "sudo apt-get install -y redis-server --no-install-recommends"
+		# devenv.vm.provision "shell", inline: "sudo apt-get install -y redis-server --no-install-recommends"
 		devenv.vm.provision "shell", inline: "sudo apt-get install -y ruby1.9.1-dev --no-install-recommends"
 		devenv.vm.provision "shell", inline: "sudo apt-get install -y ruby1.9.3 --no-install-recommends"
 		devenv.vm.provision "shell", inline: "sudo gem install cf"
