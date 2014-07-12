@@ -3,8 +3,8 @@ Vagrant.configure("2") do |config|
 		devenv.vm.box = "precise32"
 		devenv.vm.box_url = "http://files.vagrantup.com/precise32.box"
 
-		devenv.vm.network "forwarded_port", guest: 80, host: 80
-		devenv.vm.network "forwarded_port", guest: 8080, host: 8080
+		devenv.vm.network "forwarded_port", guest: 80, host: 8080
+		devenv.vm.network "forwarded_port", guest: 8080, host: 8081
 		devenv.vm.network "forwarded_port", guest: 1337, host: 1337
 		devenv.vm.network "forwarded_port", guest: 3000, host: 3000
 
