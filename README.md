@@ -25,7 +25,7 @@ $ git submodule init
 $ git submodule update
 ```
 
-3. Run Vagrant and let it do it's magic
+3. Run Vagrant and let it do its magic
 ```Shell
 $ vagrant up
 ```
